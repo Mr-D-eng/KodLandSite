@@ -8,15 +8,17 @@
       <div class="row-between">
         <section>
           <h3>NEW</h3>
-          <h1>Почему подросткам стоит изучать программирование?</h1>
-          <p>Объясняем почему словосочетание «программирование для подростков» не должно вызывать скептическую улыбку и какие полезные навыки приобретают ребята, изучая программирование.</p>
-          <div class="read">
-            <a class="read__btn" href="{% url 'article' %}">
-              <p>Читать</p>
-            </a>
-          </div>
-        </section>
-        <img src="{% static 'images/1Statya_3.png' %}" alt="Robot_s_knigami">
+          {% for all in info %}
+            <h1>{{ all.title }}</h1>
+            <p>{{ all.description }}</p>
+            <div class="read">
+              <a class="read__btn" href="{% url 'article' %}">
+                <p>Читать</p>
+              </a>
+            </div>
+          </section>
+          <img src="{{ all.img.url }}">
+        {% endfor %}
       </div>
     </div>
   </div>

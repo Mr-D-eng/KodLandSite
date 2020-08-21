@@ -3,7 +3,9 @@ from .models import Article
 
 # Create your views here.
 def main(request):
-    return render(request, 'html/main.html')
+    info=Article.objects.all()
+
+    return render(request, 'html/main.html', context={'info':info})
 
 def add(request):
     return render(request, 'html/add.html')
