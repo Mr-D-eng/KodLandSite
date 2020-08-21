@@ -18,4 +18,6 @@ from . import views
 
 urlpatterns = [
     path('', views.main, name='main'),
+    path('add', views.add, name='add'),
+    path('article', views.article, name='article'),
 ]
