@@ -200,6 +200,7 @@ main {
   align-items: center;
   letter-spacing: -0.416667px;
   color: #979797;
+  text-decoration: none;
 }
 
 .article img {
@@ -225,6 +226,7 @@ main {
 .Add h1 {
   width: 435px;
   height: 52px;
+  margin-top: 140px;
   font-family: Museo Cyrl;
   font-size: 45px;
   line-height: 52px;
@@ -232,7 +234,106 @@ main {
   color: #315AF2;
 }
 
+.Add p {
+  width: 881px;
+  height: 48px;
+  margin-right: 770px;
+}
+
+.Add input {
+  width: 881px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 2px solid #CDCDCD;
+  border-radius: 3px;
+  outline: none;
+  font-family: Circe Rounded;
+  font-size: 24px;
+  line-height: 52px;
+  letter-spacing: -0.416667px;
+  color: #315AF2;
+  padding-left: 15px;
+}
+
+.Add button {
+  width: 159px;
+  height: 50px;
+  background: #E9399C;
+  border-radius: 3px;
+  border: 0;
+  margin-top: 15px;
+  margin-left: 25px;
+  outline: none;
+}
+
+.Add p {
+  width: 133px;
+  height: 22px;
+  font-family: Museo Cyrl;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-top: 13px;
+}
+
+.Add textarea {
+  width: 902px;
+  height: 478px;
+  background: #FFFFFF;
+  border: 2px solid #CDCDCD;
+  box-sizing: border-box;
+  border-radius: 3px;
+  outline: none;
+  margin-top: 40px;
+}
+
+.Add h3 {
+  width: 255px;
+  height: 31px;
+  font-family: Circe Rounded;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  color: #315AF2;
+}
+
+.border {
+  width: 298px;
+  height: 135px;
+  background: #FFFFFF;
+  border: 2px solid #CDCDCD;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin: 40px 21px;
+}
+
 .Description__container {
   width: 610px;
-  margin-top: 60px;
+  margin: 160px 417px;
+}
+
+.Description__container h1 {
+  width: 400px;
+  height: 123px;
+  font-family: Museo Cyrl;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 128%;
+  letter-spacing: -0.416667px;
+  color: #315AF2;flex: none;
+  order: 0;
+  align-self: flex-start;
+  margin: 0px 20px;
+}
+
+.Description__container img {
+  margin-left: 20px;
+  width: 600px;
+  border-radius: 12px;
+}
+
+.show__article {
+  text-decoration: none;
+  margin-right: 100px;
 }

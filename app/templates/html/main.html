@@ -4,31 +4,37 @@
 {% load static %}
 <main>
   <div class="New">
-    <div class="container">
-      <div class="row-between">
-        <section>
-          <h3>NEW</h3>
-          {% for all in info %}
+    {% for all in latest_articles %}
+      <div class="container">
+        <div class="row-between">
+          <section>
+            <h3>NEW</h3>
             <h1>{{ all.title }}</h1>
             <p>{{ all.description }}</p>
             <div class="read">
-              <a class="read__btn" href="{% url 'article' %}">
+              <a class="read__btn" href="{% url 'app:detail' all.id %}">
                 <p>Читать</p>
               </a>
             </div>
           </section>
           <img src="{{ all.img.url }}">
-        {% endfor %}
+        </div>
       </div>
-    </div>
+    {% endfor %}
   </div>
   <div class="Articles">
     <div class="container">
       <h3>Другие статьи</h3>
-      <div class="article">
-        <p>28 июня 2019 18:34</p>
-        <img src="{% static 'images/1Statya_2.png' %}" alt="Robot_s_knigami">
-        <h3>Как программирование развивает привычные отрасли?</h3>
+      <div class="row">
+        {% for all in info %}
+          <a class="show__article" href="{% url 'app:detail' all.id %}">
+            <div class="article">
+              <p>{{ all.date }} {{ all.time }}</p>
+              <img src="{{ all.img.url }}">
+              <h3>{{ all.title }}</h3>
+            </div>
+          </a>
+        {% endfor %}
       </div>
     </div>
   </div>

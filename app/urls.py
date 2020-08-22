@@ -16,8 +16,9 @@ Including another URLconf
 from django.urls import path
 from . import views
 
+app_name = 'app'
 urlpatterns = [
     path('', views.main, name='main'),
     path('add', views.add, name='add'),
-    path('article', views.article, name='article'),
+    path('<int:article_id>/', views.detail, name='detail'),
 ]

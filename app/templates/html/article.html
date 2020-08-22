@@ -2,12 +2,12 @@
 
 {% block content %}
 {% load static %}
-<main>
-  <div class="Description">
+  <main>
     <div class="Description__container">
-
+      <h1>{{ article.title }}</h1>
+      <img src="{{ article.img.url }}">
+      <p>{{ article.text }}</p>
     </div>
-  </div>
-</main>
+  </main>
 <script src="{% static "js/js.js" %}"></script>
 {% endblock %}

@@ -1,7 +1,4 @@
-
-<script type="text/javascript" src="">
-
-</script><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     {% load static %}
@@ -16,12 +13,12 @@
       <div class="container">
         <div class="row-between">
           <div class="row">
-            <a class="logo" href="{% url 'main' %}">
-              <img src="{% static 'images/Logo_Kodland.svg' %}">
+            <a class="logo" href="{% url 'app:main' %}">
+              <img src="{% static 'icons/Logo_Kodland.svg' %}">
             </a>
             <p class="text">Блог</p>
           </div>
-          <a class="add" href="{% url 'add' %}">
+          <a class="add" href="{% url 'app:add' %}">
             <p>+ Добавить статью</p>
           </a>
         </div>

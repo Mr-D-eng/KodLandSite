@@ -6,7 +6,21 @@
   <div class="Add">
     <div class="container">
       <h1>Добавить статью</h1>
-
+      <form action="index.html" method="post">
+        <div class="row">
+          <p><input type="text" placeholder="Введите название статьи"></p>
+          <button type="sumbit" name="button">
+            <p>Опубликовать</p>
+          </button>
+        </div>
+        <div class="row">
+          <textarea name="name" rows="8" cols="80"></textarea>
+          <div class="border">
+            <h3>Загрузить Изобрание</h3>
+            <input class="image" type="image">
+          </div>
+        </div>
+      </form>
     </div>
 </main>
 {% endblock %}
